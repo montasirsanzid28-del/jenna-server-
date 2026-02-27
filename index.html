@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jenna Ortega Fan Server — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="banner"><img src="assets/server_banner.gif" alt="Server banner"></div>
+    <header class="header" role="banner" aria-label="Site header">
+      <div class="brand">
+        <img src="assets/server_pfp.gif" class="logo pfp" alt="Server PFP">
+        <div>
+          <div class="title" id="serverName">JENNA ORTEGA FAN SERVER</div>
+          <div class="badge">Community • Fan-run</div>
+        </div>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html">🏠 Home</a>
+        <a href="channels.html">💬 Channels</a>
+        <a href="events.html">🎉 Events</a>
+        <a href="gallery.html">🖼️ Gallery</a>
+        <a href="jenna.html">📷 Jenna Pics</a>
+        <a href="about.html">ℹ️ About</a>
+        <a href="rules.html">⚖️ Rules</a>
+      </nav>
+
+      <div class="cta" role="group" aria-label="Primary actions">
+        <button class="btn" data-join id="joinBtn" aria-label="Join server">Join</button>
+        <button class="btn secondary" data-copy id="copyBtn" aria-label="Copy invite link">Copy Invite</button>
+        <!-- Theme toggle -->
+        <button id="themeToggle" class="btn secondary" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="left">
+        <div class="hero-card">
+          <h1>Welcome to the Jenna Ortega fan community</h1>
+          <p>Connect with fellow fans, join watch parties, share fan art, and celebrate together. Our server is a welcoming, moderated space for fans of all ages.</p>
+
+          <div class="small-cta">
+            <button class="btn pulse" data-join>Join the server</button>
+            <a href="channels.html" class="btn secondary">View channels</a>
+          </div>
+
+          <div class="preview-channels">
+            <span class="channel" data-emoji="💬">#chat</span>
+            <span class="channel" data-emoji="🖼️">#media</span>
+            <span class="channel" data-emoji="⭐">#jenna-ortega</span>
+            <span class="channel" data-emoji="🧠">#fun-facts</span>
+            <span class="channel" data-emoji="❓">#qotd</span>
+            <span class="channel" data-emoji="🎉">#events</span>
+            <span class="channel" data-emoji="🏆">#contests</span>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card inviteCard">
+          <div style="font-size:12px;color:var(--muted)">Instant invite</div>
+          <div style="font-size:14px;margin-top:6px">https://discord.gg/XbR2fgFv</div>
+          <div style="height:8px"></div>
+          <button class="btn" data-join>Open Invite</button>
+          <button class="btn secondary" data-copy>Copy Invite</button>
+          <div style="height:12px"></div>
+          <div style="color:var(--muted);font-size:12px">Share with friends & follow the rules.</div>
+          <div style="height:14px"></div>
+
+          <div class="stats" aria-live="polite">
+            <div class="stat">
+              <div class="stat-label">Members</div>
+              <div class="stat-value" id="memberCount">—</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Online</div>
+              <div class="stat-value" id="onlineCount">—</div>
+            </div>
+            <div class="stat-actions">
+              <button class="btn secondary" id="refreshCounts">Refresh</button>
+              <div class="source-badge" id="countSource">Invite API</div>
+            </div>
+            <div class="last-updated muted" id="lastUpdated">Last updated: —</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- New Features Section -->
+    <section class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🎬</div>
+        <h3 class="feature-title">Watch Parties</h3>
+        <p class="feature-desc">Join live movie nights and binge sessions with other fans. We watch Jenna's latest projects together!</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3 class="feature-title">Fan Art Gallery</h3>
+        <p class="feature-desc">Showcase your creativity! Share fan art, edits, and creative projects inspired by Jenna.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏆</div>
+        <h3 class="feature-title">Monthly Contests</h3>
+        <p class="feature-desc">Participate in fun challenges and win exclusive roles and recognition in the server.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💬</div>
+        <h3 class="feature-title">Active Community</h3>
+        <p class="feature-desc">24/7 chat with friendly fans from around the world. Make new friends who share your passion!</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <h3 class="feature-title">Mobile Friendly</h3>
+        <p class="feature-desc">Optimized for phones and tablets. Chat and browse on the go!</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3 class="feature-title">Safe Environment</h3>
+        <p class="feature-desc">Moderated community with strict rules to ensure everyone feels welcome and safe.</p>
+      </div>
+    </section>
+
+    <div class="features">
+      <div class="feature"><span class="icon">🛡️</span> <div>Moderated • Safe space for fans</div></div>
+      <div class="feature"><span class="icon">🎉</span> <div>Events & watch parties</div></div>
+      <div class="feature"><span class="icon">🏆</span> <div>Fan gallery & contests</div></div>
+    </div>
+
+    <!-- New Social Media Section -->
+    <section style="margin:30px 0">
+      <h3 style="text-align:center;margin-bottom:20px;color:var(--text)">Connect With Us</h3>
+      <div class="social-links" style="justify-content:center">
+        <a href="#" class="social-btn" style="background:linear-gradient(45deg,#ff6b6b,#ff9ad6);color:white">📸</a>
+        <a href="#" class="social-btn" style="background:linear-gradient(45deg,#7c5cff,#00d4ff);color:white">🐦</a>
+        <a href="#" class="social-btn" style="background:linear-gradient(45deg,#ffd166,#63f5b5);color:white">📺</a>
+        <a href="#" class="social-btn" style="background:linear-gradient(45deg,#4da6ff,#8cffa3);color:white">🎵</a>
+      </div>
+      <p style="text-align:center;margin-top:15px;color:var(--muted);font-size:14px">Follow us on social media for updates and exclusive content!</p>
+    </section>
+
+    <footer class="footer card">
+      <div style="font-weight:700">About this server</div>
+      <div style="margin-top:8px;color:var(--muted)">A fan-run community for fans of Jenna Ortega — not affiliated with or endorsed by Jenna Ortega.</div>
+      <div class="disclaimer">Please be respectful and follow Discord's Terms of Service.</div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

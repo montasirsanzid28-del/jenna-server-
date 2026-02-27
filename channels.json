@@ -1,0 +1,22 @@
+[
+  {"name":"#chat","emoji":"💬","url":"https://discord.gg/XbR2fgFv","desc":"General conversation and daily chat."},
+  {"name":"#media","emoji":"🖼️","url":"https://discord.gg/XbR2fgFv","desc":"Share photos, edits, and videos."},
+  {"name":"#jenna-ortega","emoji":"⭐","url":"https://discord.gg/XbR2fgFv","desc":"Jenna-related news and discussion."},
+  {"name":"#fun-facts","emoji":"🧠","url":"https://discord.gg/XbR2fgFv","desc":"Share interesting facts and trivia."},
+  {"name":"#qotd","emoji":"❓","url":"https://discord.gg/XbR2fgFv","desc":"Daily questions to spark conversation."},
+
+  {"name":"#rules","emoji":"⚖️","url":"https://discord.com/channels/1171345931652833290/1171348575708532746/1432087468542529536","desc":"Server rules and guidelines."},
+  {"name":"#server-news","emoji":"📢","url":"https://discord.gg/XbR2fgFv","desc":"Official server announcements."},
+
+  {"name":"#jenna-news","emoji":"📰","url":"https://discord.gg/XbR2fgFv","desc":"News and updates about Jenna."},
+  {"name":"#show-news","emoji":"🎭","url":"https://discord.gg/XbR2fgFv","desc":"Updates about shows and appearances."},
+  {"name":"#daily-jenna","emoji":"🌞","url":"https://discord.gg/XbR2fgFv","desc":"Daily highlights and posts."},
+  {"name":"#booster-perks","emoji":"🎁","url":"https://discord.gg/XbR2fgFv","desc":"Perks for server boosters."},
+  {"name":"#server-ad","emoji":"📣","url":"https://discord.gg/XbR2fgFv","desc":"Server advertisement and promo."},
+  {"name":"#events-boosts","emoji":"🎟️","url":"https://discord.gg/XbR2fgFv","desc":"Events and boosts info."},
+  {"name":"#support","emoji":"🆘","url":"https://discord.gg/XbR2fgFv","desc":"Ask for help and support."},
+  {"name":"#giveaways","emoji":"🎉","url":"https://discord.gg/XbR2fgFv","desc":"Current giveaways and winners."},
+  {"name":"#partner","emoji":"🤝","url":"https://discord.gg/XbR2fgFv","desc":"Partner announcements."},
+  {"name":"#partner-reqs","emoji":"📝","url":"https://discord.gg/XbR2fgFv","desc":"Partner request guidelines."},
+  {"name":"#introductions","emoji":"🙋‍♀️","url":"https://discord.gg/XbR2fgFv","desc":"New member intros and welcomes."}
+]

@@ -1,0 +1,5 @@
+- [x] Add APScheduler and beautifulsoup4 to requirements.txt
+- [x] Update dev.py to add image collection function and scheduled task
+- [x] Update admin.html to add button and status for image collection
+- [x] Update jenna.html to note auto-collection
+- [x] Test the system

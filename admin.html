@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin — Jenna Ortega Fan Server</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="banner"><img src="assets/server_banner.gif" alt="Server banner"></div>
+    <header class="header">
+      <div class="brand">
+        <img src="assets/server_pfp.gif" class="logo pfp" alt="Server PFP">
+        <div>
+          <div class="title">Admin — Jenna Ortega Fan Server</div>
+          <div class="badge">Restricted</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="channels.html">Channels</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="rules.html">Rules</a>
+      </nav>
+      <div class="cta">
+        <a href="admin.html" class="btn secondary">🔒 Admin</a>
+      </div>
+    </header>
+
+    <main class="card">
+      <h2>Admin Panel</h2>
+      <p class="muted">Enter your admin token in the URL as ?token=YOUR_TOKEN or use the browser extension to set header X-Admin-Token.</p>
+      <div id="adminPanel" style="margin-top:12px"></div>
+
+      <section class="card" style="margin-top:12px">
+        <h3>Manage Channels</h3>
+        <p class="muted">Add or remove quick channel links that appear on the site.</p>
+        <form id="addChannelForm" style="display:flex;gap:8px;align-items:center;margin-top:8px">
+          <input name="emoji" placeholder="Emoji (optional)" style="padding:8px;border-radius:8px;border:1px solid rgba(11,18,32,0.06);width:80px">
+          <input name="name" placeholder="#channel-name" style="padding:8px;border-radius:8px;border:1px solid rgba(11,18,32,0.06);flex:1">
+          <input name="url" placeholder="https://discord.com/channels/..." style="padding:8px;border-radius:8px;border:1px solid rgba(11,18,32,0.06);flex:2">
+          <button class="btn" type="submit">Add</button>
+        </form>
+        <div id="channelList" style="margin-top:12px"></div>
+      </section>
+
+      <section class="card" style="margin-top:12px">
+        <h3>Collect Jenna Images</h3>
+        <p class="muted">Automatically collect up to 10 images of Jenna Ortega from the web daily.</p>
+        <button class="btn" id="collectImagesBtn">Collect Images Now</button>
+        <div id="collectStatus" class="muted" style="margin-top:8px"></div>
+      </section>
+
+      <div style="margin-top:12px;color:var(--muted)" id="adminStats"></div>
+    </main>
+
+    <footer class="footer card">Admin tools are for moderators only.</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

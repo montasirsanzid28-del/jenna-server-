@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Events — Jenna Ortega Fan Server</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="banner"><img src="assets/server_banner.gif" alt="Server banner"></div>
+    <header class="header">
+      <div class="brand">
+        <img src="assets/server_pfp.gif" class="logo pfp" alt="Server PFP">
+        <div>
+          <div class="title">JENNA ORTEGA FAN SERVER</div>
+          <div class="badge">Events • Watch parties</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="channels.html">Channels</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="rules.html">Rules</a>
+      </nav>
+      <div class="cta">
+        <button class="btn" id="joinBtn">Join</button>
+        <button class="btn secondary" id="copyBtn">Copy Invite</button>
+      </div>
+    </header>
+
+    <main class="card">
+      <h2>Upcoming Events</h2>
+      <p class="muted">Keep an eye here for pinned event announcements and watch parties.</p>
+
+      <!-- New Event Cards -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:15px;margin:20px 0">
+        <div class="feature-card">
+          <div class="feature-icon">🎬</div>
+          <h3 class="feature-title">Movie Night Watch Party</h3>
+          <p class="feature-desc"><strong>When:</strong> Every Saturday • 7:00 PM EST<br><strong>Where:</strong> Voice Channel<br><strong>What:</strong> Watch Jenna's latest projects together with live chat!</p>
+          <button class="btn secondary" style="margin-top:10px">Set Reminder</button>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h3 class="feature-title">Monthly Fan Art Contest</h3>
+          <p class="feature-desc"><strong>Theme:</strong> "Jenna's Iconic Roles"<br><strong>Submit:</strong> In #gallery channel<br><strong>Prizes:</strong> Exclusive roles & server spotlight</p>
+          <button class="btn secondary" style="margin-top:10px">View Rules</button>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🎤</div>
+          <h3 class="feature-title">Trivia Night</h3>
+          <p class="feature-desc"><strong>When:</strong> Last Friday of month • 8:00 PM EST<br><strong>Test:</strong> Your Jenna knowledge!<br><strong>Win:</strong> Bragging rights & special emoji</p>
+          <button class="btn secondary" style="margin-top:10px">Join Chat</button>
+        </div>
+      </div>
+
+      <ul class="events">
+        <li><strong>🎉 New Event:</strong> Monthly trivia night starting next week!</li>
+        <li><strong>🎬 Watch Party:</strong> New movie night — Saturday 7pm (voice channel).</li>
+        <li><strong>🏆 Fan Art Contest:</strong> Monthly theme with winner spotlight.</li>
+        <li><strong>❓ Q&A Recap:</strong> Community Q&A summarised (ask in #jenna-ortega).</li>
+      </ul>
+
+      <!-- New Event Stats -->
+      <div class="stats" style="margin-top:20px">
+        <div class="stat">
+          <div class="stat-label">This Month's Events</div>
+          <div class="stat-value">4</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Average Attendance</div>
+          <div class="stat-value">50+</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Next Event</div>
+          <div class="stat-value">Sat 7PM EST</div>
+        </div>
+      </div>
+
+      <p style="margin-top:18px;color:var(--muted)">Want to host an event? Ping a moderator and propose your idea in <span class="badge">#chat</span>. We love community-driven activities!</p>
+    </main>
+
+    <footer class="footer card">Not affiliated with Jenna Ortega. Fan-run community. Be kind and follow Discord's terms.</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

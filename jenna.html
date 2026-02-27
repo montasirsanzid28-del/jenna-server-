@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Recent Jenna Pictures</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="banner"><img src="assets/server_banner.gif" alt="Server banner"></div>
+    <header class="header">
+      <div class="brand">
+        <img src="assets/server_pfp.gif" class="logo pfp" alt="Server PFP">
+        <div>
+          <div class="title">JENNA ORTEGA FAN SERVER</div>
+          <div class="badge">Community • Fan-run</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">🏠 Home</a>
+        <a href="gallery.html">🖼️ Gallery</a>
+        <a href="jenna.html">📷 Jenna Pics</a>
+        <a href="channels.html">💬 Channels</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Recent Jenna Pictures</h2>
+        <p style="color:var(--muted)">Curated recent photos and public media (auto-collected daily from the web).</p>
+        
+        <!-- New Stats Section -->
+        <div class="stats" style="margin:15px 0">
+          <div class="stat">
+            <div class="stat-label">Total Images</div>
+            <div class="stat-value" id="jennaCount">—</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Last Updated</div>
+            <div class="stat-value" id="lastCollect">—</div>
+          </div>
+        </div>
+
+        <div style="margin-bottom:12px">
+          <button class="btn rainbow" id="collectJennaBtn">Collect New Photos 📷</button>
+          <div id="collectStatus" class="muted" style="margin-top:8px"></div>
+        </div>
+        
+        <!-- New Image Categories -->
+        <div style="margin:15px 0;display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn secondary" data-jenna-filter="all">All Photos</button>
+          <button class="btn secondary" data-jenna-filter="red-carpet">Red Carpet</button>
+          <button class="btn secondary" data-jenna-filter="casual">Casual</button>
+          <button class="btn secondary" data-jenna-filter="events">Events</button>
+          <button class="btn secondary" data-jenna-filter="behind-scenes">Behind Scenes</button>
+        </div>
+
+        <div class="jenna-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" aria-label="Close">✕</button>
+      <img class="lightbox-img" src="" alt="expanded">
+    </div>
+
+    <footer class="footer card">
+      <div style="font-weight:700">About this server</div>
+      <div style="margin-top:8px;color:var(--muted)">A fan-run community for fans of Jenna Ortega — not affiliated with or endorsed by Jenna Ortega.</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — Jenna Ortega Fan Server</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="banner"><img src="assets/server_banner.gif" alt="Server banner"></div>
+    <header class="header">
+      <div class="brand">
+        <img src="assets/server_pfp.gif" class="logo pfp" alt="Server PFP">
+        <div>
+          <div class="title">JENNA ORTEGA FAN SERVER</div>
+          <div class="badge">Fan art & edits</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="channels.html">Channels</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="rules.html">Rules</a>
+      </nav>
+      <div class="cta">
+        <button class="btn" id="joinBtn">Join</button>
+        <button class="btn secondary" id="copyBtn">Copy Invite</button>
+      </div>
+    </header>
+
+    <main class="card">
+      <h2>Fan Gallery 🎨</h2>
+      <p class="muted">Community-submitted edits and photos. Click an image to view larger. Uploads are reviewed before appearing.</p>
+
+      <!-- New Gallery Stats -->
+      <div class="stats" style="margin:15px 0">
+        <div class="stat">
+          <div class="stat-label">Total Submissions</div>
+          <div class="stat-value" id="galleryCount">—</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Today's Uploads</div>
+          <div class="stat-value" id="todayCount">—</div>
+        </div>
+      </div>
+
+      <form id="uploadForm" class="card" style="margin-top:12px;display:flex;flex-direction:column;gap:8px">
+        <label>Upload an image (PNG, JPG, WEBP; max 5MB)</label>
+        <input type="text" name="uploader" placeholder="Your name (optional)" style="padding:8px;border-radius:8px;border:1px solid rgba(11,18,32,0.06)">
+        <input type="file" accept="image/png,image/jpeg,image/webp">
+        <div style="display:flex;gap:8px"><button class="btn" type="submit">Upload 🖼️</button><div id="uploadStatus" class="muted">No upload yet</div></div>
+      </form>
+
+      <!-- New Gallery Filters -->
+      <div style="margin:15px 0;display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn secondary" data-filter="all">All Images</button>
+        <button class="btn secondary" data-filter="fan-art">Fan Art</button>
+        <button class="btn secondary" data-filter="edits">Photo Edits</button>
+        <button class="btn secondary" data-filter="memes">Memes</button>
+        <button class="btn secondary" data-filter="recent">Recent</button>
+      </div>
+
+      <div class="gallery-grid" style="margin-top:12px"></div>
+    </main>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" aria-label="Close">✕</button>
+      <img class="lightbox-img" src="" alt="">
+    </div>
+
+    <footer class="footer card">Not affiliated with Jenna Ortega. Fan-run community. Be kind and follow Discord's terms.</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
